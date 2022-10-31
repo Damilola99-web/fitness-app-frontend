@@ -1,5 +1,4 @@
 {
-  "proxy": "https://fitness-tracker03.herokuapp.com",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,

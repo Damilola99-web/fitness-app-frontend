@@ -10,7 +10,7 @@ export default function WorkoutDetails({ workout, setError }) {
 		if (!user) {
 			return;
 		}
-		const response = await fetch(`/api/workouts/${workout._id}`, {
+		const response = await fetch(`https://fitness-tracker03.herokuapp.com/api/workouts/${workout._id}`, {
 			headers : { Authorization: `Bearer ${user.token}` },
 			method  : 'DELETE'
 		});

@@ -13,7 +13,7 @@ export default function Home() {
 	useEffect(() => {
 		const fetchWorkouts = async () => {
 			try {
-				const response = await fetch('/api/workouts', {
+				const response = await fetch('https://fitness-tracker03.herokuapp.com/api/workouts', {
 					headers : { Authorization: `Bearer ${user.token}` },
 				});
 				const json = await response.json();

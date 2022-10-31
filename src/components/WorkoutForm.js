@@ -26,7 +26,7 @@ export default function WorkoutForm() {
 			reps
 		};
 
-		const response = await fetch('/api/workouts', {
+		const response = await fetch('https://fitness-tracker03.herokuapp.com/api/workouts', {
 			method  : 'POST',
 			body    : JSON.stringify(workout),
 			headers : {
